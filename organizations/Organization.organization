@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Organization">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="superuser">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="kandidat">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="gost">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="zaposleni">
+      <firstName>Zaposleni</firstName>
+      <lastName>Zaposleni</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Zaposleni">
+      <displayName>Zaposleni</displayName>
+    </group>
+    <group name="tehnickaSluzba" parentPath="/Zaposleni">
+      <displayName>Tehnička služba</displayName>
+    </group>
+    <group name="hrSluzba" parentPath="/Zaposleni">
+      <displayName>HR služba</displayName>
+    </group>
+    <group name="nabavka" parentPath="/Zaposleni">
+      <displayName>Nabavka</displayName>
+    </group>
+    <group name="finansije" parentPath="/Zaposleni">
+      <displayName>Finansije</displayName>
+    </group>
+    <group name="opstaSluzba" parentPath="/Zaposleni">
+      <displayName>Opšta služba</displayName>
+    </group>
+    <group name="dobavljaci">
+      <displayName>Dobavljači</displayName>
+    </group>
+    <group name="kandidati">
+      <displayName>Kandidati</displayName>
+    </group>
+    <group name="Gosti">
+      <displayName>Neregistrovani korisnici</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>superuser</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>superuser</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>kandidat</userName>
+      <roleName>member</roleName>
+      <groupName>kandidati</groupName>
+    </membership>
+    <membership>
+      <userName>gost</userName>
+      <roleName>member</roleName>
+      <groupName>Gosti</groupName>
+    </membership>
+    <membership>
+      <userName>zaposleni</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
