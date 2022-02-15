@@ -99,6 +99,7 @@
                 <field type="FLOAT" length="255" name="kolicina" nullable="false" collection="false"/>
                 <field type="FLOAT" length="255" name="kolicinaNaSkladistu" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="korekcijaPotvrdjena" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="nemaNaStanju" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
