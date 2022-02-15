@@ -80,6 +80,36 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Trebovanje">
+            <fields>
+                <field type="STRING" length="255" name="zaposleni" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.TrebovanjeProizvod" fetchType="LAZY" name="proizvodi" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="preliminarniStatus" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="maksimalniIznos" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="obrazlozenje" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.TrebovanjeProizvod">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.VrstaProizvoda" fetchType="EAGER" name="vrsta" nullable="false" collection="false"/>
+                <field type="STRING" length="400" name="tipProizvoda" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="kolicina" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.VrstaProizvoda">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.ZahtevZaOdlazakNaKonferenciju">
             <fields>
                 <field type="STRING" length="255" name="ime" nullable="true" collection="false"/>

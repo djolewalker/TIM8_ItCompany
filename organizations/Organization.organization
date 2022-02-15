@@ -3,6 +3,8 @@
   <customUserInfoDefinitions/>
   <users>
     <user userName="superuser">
+      <firstName>Petar</firstName>
+      <lastName>Petrovic</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
