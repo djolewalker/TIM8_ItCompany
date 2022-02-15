@@ -6,7 +6,9 @@
       <firstName>Petar</firstName>
       <lastName>Petrovic</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>example@asd.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
