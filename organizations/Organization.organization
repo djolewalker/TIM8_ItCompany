@@ -32,6 +32,26 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="dobavljac1">
+      <firstName>Dobavljac</firstName>
+      <lastName>1</lastName>
+      <personalData/>
+      <professionalData>
+        <email>asd@maaail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="dobavljac2">
+      <firstName>Dobavljac</firstName>
+      <lastName>2</lastName>
+      <personalData/>
+      <professionalData>
+        <email>dovabljac@adas.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -92,6 +112,16 @@
       <userName>zaposleni</userName>
       <roleName>member</roleName>
       <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>dobavljac1</userName>
+      <roleName>member</roleName>
+      <groupName>dobavljaci</groupName>
+    </membership>
+    <membership>
+      <userName>dobavljac2</userName>
+      <roleName>member</roleName>
+      <groupName>dobavljaci</groupName>
     </membership>
   </memberships>
 </organization:Organization>

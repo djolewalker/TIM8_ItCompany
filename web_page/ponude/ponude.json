@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "obradaTrebovanja",
-  "name" : "obradaTrebovanja",
-  "lastUpdate" : 1645018510205,
+  "id" : "ponude",
+  "name" : "ponude",
+  "lastUpdate" : 1645051543810,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2005d867-052e-4b96-b4cc-73b3abe802f9",
+        "reference" : "3b826e3c-517d-48f7-9375-1c63ec05c1e9",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "1ce7abb5-b2ee-42a2-919e-eec540803931",
+              "reference" : "eaff9b9f-04c6-4c3e-88a9-fa47efa900e8",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "8df17046-5d44-4727-a4c7-fd4850cd8a3a",
+              "reference" : "36f8b0fd-4715-4284-8217-ead99128bc76",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -113,8 +113,17 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "99c177d1-5341-4c07-8527-7f8ba1bbccc5",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "6dc32a95-f05e-45a0-8db7-1fe21ed5a417",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +132,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "0ef9d80f-4ab3-4a4a-93ce-196d989d8320",
+          "reference" : "a1a5b69f-58c2-4e08-8ab0-7ec24f7f9656",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -143,7 +152,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "Level 3"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -151,7 +160,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Trebovanje"
+                    "value" : "Ponude"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +171,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "566b104d-4512-4edc-8e87-30f25b79eab0",
+                "reference" : "b801cc91-b907-44c2-9954-f7f5dce4a3c4",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,22 +188,23 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : "ponude"
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
+                    "type" : "expression",
+                    "value" : "border"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
                   }
                 },
-                "reference" : "94034f39-c782-4b13-84c5-f378fc9ef59e",
+                "reference" : "3123a3a3-4b90-4b42-8343-a582eb4b5cdc",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -202,10 +212,46 @@
                     {
                       "type" : "component",
                       "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Ponuda {{$index + 1 }}"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "37d903e4-14e0-4cd7-86e5-4cde041e3940",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
                         "md" : 12,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -234,7 +280,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Zaposleni"
+                          "value" : "Ponudjac"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -249,7 +295,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "trebovanje.zaposleni"
+                          "value" : "$item.ponudjacNaziv"
                         },
                         "required" : {
                           "type" : "constant",
@@ -274,7 +320,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "d8b6db49-c03f-47f4-a6e0-0baab281f86a",
+                      "reference" : "69057366-b148-4605-8cff-f7914826e21d",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -292,7 +338,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "trebovanje_proizvodi"
+                          "value" : "$item.stavke"
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -300,20 +346,20 @@
                         },
                         "cssClasses" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "border"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         }
                       },
-                      "reference" : "d467c1b0-8a7d-440a-a8b0-2a0045b995ab",
+                      "reference" : "01e96d1d-c727-4c82-b06d-1778c1ca3f0d",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
                         [
                           {
-                            "type" : "component",
+                            "type" : "container",
                             "dimension" : {
                               "md" : 12,
                               "sm" : 12,
@@ -321,198 +367,192 @@
                               "lg" : 12
                             },
                             "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "level" : {
-                                "type" : "constant",
-                                "value" : "Level 4"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "Proizvod {{$index + 1}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "e8a7cf71-af2c-46f3-8082-57ed3db5f39a",
-                            "hasValidationError" : false,
-                            "id" : "pbTitle",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 6
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Vrsta proizvoda"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
+                              "repeatedCollection" : {
                                 "type" : "variable",
-                                "value" : "$item.vrsta.naziv"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "minLength" : {
-                                "type" : "constant",
                                 "value" : ""
-                              },
-                              "maxLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "min" : {
-                                "type" : "constant"
-                              },
-                              "max" : {
-                                "type" : "constant"
-                              },
-                              "step" : {
-                                "type" : "constant",
-                                "value" : 1
-                              }
-                            },
-                            "reference" : "589a5144-afae-4205-a9a0-f4ad69839a57",
-                            "hasValidationError" : false,
-                            "id" : "pbInput",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
                               },
                               "hidden" : {
                                 "type" : "constant",
                                 "value" : false
                               },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
                               "cssClasses" : {
                                 "type" : "constant",
                                 "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Tip Proizvoda"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "text"
                               },
                               "dimension" : {
                                 "type" : "constant",
                                 "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.tipProizvoda"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "minLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "maxLength" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "min" : {
-                                "type" : "constant"
-                              },
-                              "max" : {
-                                "type" : "constant"
-                              },
-                              "step" : {
-                                "type" : "constant",
-                                "value" : 1
                               }
                             },
-                            "reference" : "504fb9e2-11e7-46f4-bec9-a079eca2a51b",
+                            "reference" : "2a4a958b-77ed-45e8-8e4d-9aba2239bca9",
                             "hasValidationError" : false,
-                            "id" : "pbInput",
-                            "description" : ""
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Vrsta proizvoda"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "$item.proizvod.vrsta.naziv"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "minLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "maxLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "min" : {
+                                      "type" : "constant"
+                                    },
+                                    "max" : {
+                                      "type" : "constant"
+                                    },
+                                    "step" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    }
+                                  },
+                                  "reference" : "2923dda4-d22d-4d97-b12c-26a1d364a874",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Tip Proizvoda"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "$item.proizvod.tipProizvoda"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "minLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "maxLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "min" : {
+                                      "type" : "constant"
+                                    },
+                                    "max" : {
+                                      "type" : "constant"
+                                    },
+                                    "step" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    }
+                                  },
+                                  "reference" : "4440ff82-4c23-453b-9b29-cef4152cc6a8",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ]
+                            ]
                           }
                         ],
                         [
@@ -551,7 +591,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Kolicina"
+                                "value" : "Cena Za Komad"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -566,7 +606,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.kolicina"
+                                "value" : "$item.cenaZaKomad"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -591,7 +631,7 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "e35e05c2-4d3e-4932-9b81-a454648832e0",
+                            "reference" : "69e28533-8466-43c5-a07e-c0363669b00e",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -612,8 +652,8 @@
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "!$item.uvekDostupno"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -621,11 +661,11 @@
                               },
                               "disabled" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Nema na stanju"
+                                "value" : "Uvek Dostupno"
                               },
                               "dimension" : {
                                 "type" : "constant",
@@ -633,14 +673,14 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.nemaNaStanju"
+                                "value" : "$item.uvekDostupno"
                               },
                               "required" : {
                                 "type" : "constant",
                                 "value" : false
                               }
                             },
-                            "reference" : "bc2400f3-bdd4-4292-b29c-f4f41763a7b3",
+                            "reference" : "d51257b4-1bad-4952-aa9a-796f112e4d27",
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
                             "description" : ""
@@ -662,7 +702,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "$item.nemaNaStanju"
+                                "value" : "$item.uvekDostupno"
                               },
                               "labelPosition" : {
                                 "type" : "constant",
@@ -678,11 +718,11 @@
                               },
                               "readOnly" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Kolicina na skladistu"
+                                "value" : "Dostupno Komada"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -697,7 +737,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.kolicinaNaSkladistu"
+                                "value" : "$item.dostupnoKomada"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -722,13 +762,62 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "5717206b-7ebb-4925-8d10-ec771ac464e0",
+                            "reference" : "08bb6466-a9c5-49e3-b841-1f834fc8ba02",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
                           }
                         ]
                       ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Najbolja Ponuda"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "$item.najboljaPonuda"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "481c1c5e-e6ec-4a82-b4f4-0939effd4f4b",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -761,7 +850,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Evidentiraj stanje"
+                    "value" : "Potvrdi najbolju ponudu"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -828,7 +917,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "b4599db3-772f-4c5c-9947-a7f25f809b63",
+                "reference" : "fcb63c6c-6cd1-4c4e-bee9-8ac1841d00f9",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -888,7 +977,7 @@
                     "value" : 4
                   }
                 },
-                "reference" : "8c46798b-955c-404f-9e6c-56098f5436e8",
+                "reference" : "9dc18c0b-1402-46b7-ac02-eeaa9ba7303d",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -901,16 +990,16 @@
   ],
   "assets" : [
     {
-      "id" : "c66c65a4-d935-48d2-827c-38e4312ee14f",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "e6a26b3e-395d-47d7-9f22-3c3125b61539",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "81af5294-cfe3-4c0a-a153-ac8741c36a88",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "0a587899-b6e9-476e-bc3f-b32888e2df26",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -939,36 +1028,32 @@
       ],
       "exposed" : false
     },
-    "trebovanje_proizvodi" : {
-      "type" : "url",
-      "value" : [
-        "{{trebovanje|lazyRef:'proizvodi'}}"
-      ],
-      "exposed" : false
-    },
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.trebovanje && $data.trebovanje_proizvodi ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.trebovanje.proizvodi = $data.trebovanje_proizvodi;",
+        "if( $data.ponude ){",
         "\treturn {",
-        "\t\t//map trebovanje variable to expected task contract input",
-        "\t\ttrebovanjeInput: {",
-        "\t\t\tzaposleni: $data.trebovanje.zaposleni !== undefined ? $data.trebovanje.zaposleni : null,",
-        "\t\t\tproizvodi: $data.trebovanje.proizvodi.map( it => ({",
+        "\t\t//map ponude variable to expected task contract input",
+        "\t\tponudeInput: $data.ponude.map( it => ({",
+        "\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
+        "\t\t\tstavke: it.stavke.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\t\tvrsta: it.vrsta ? {",
-        "\t\t\t\t\tpersistenceId_string: it.vrsta.persistenceId_string !== undefined ? it.vrsta.persistenceId_string : null,",
-        "\t\t\t\t\tnaziv: it.vrsta.naziv !== undefined ? it.vrsta.naziv : null",
-        "\t\t\t\t} : null,",
-        "\t\t\t\ttipProizvoda: it.tipProizvoda !== undefined ? it.tipProizvoda : null,",
-        "\t\t\t\tkolicina: it.kolicina !== undefined ? it.kolicina : null,",
-        "\t\t\t\tkolicinaNaSkladistu: it.kolicinaNaSkladistu !== undefined ? it.kolicinaNaSkladistu : null,",
-        "\t\t\t\tkorekcijaPotvrdjena: it.korekcijaPotvrdjena !== undefined ? it.korekcijaPotvrdjena : null,",
-        "\t\t\t\tnemaNaStanju: it.nemaNaStanju !== undefined ? it.nemaNaStanju : null",
-        "\t\t\t}))",
-        "\t\t}",
+        "\t\t\t\tcenaZaKomad: it.cenaZaKomad !== undefined ? it.cenaZaKomad : null,",
+        "\t\t\t\tdostupnoKomada: it.dostupnoKomada !== undefined ? it.dostupnoKomada : null,",
+        "\t\t\t\tuvekDostupno: it.uvekDostupno !== undefined ? it.uvekDostupno : null,",
+        "\t\t\t\tproizvod: it.proizvod ? {",
+        "\t\t\t\t\tpersistenceId_string: it.proizvod.persistenceId_string !== undefined ? it.proizvod.persistenceId_string : null,",
+        "\t\t\t\t\tvrsta: it.proizvod.vrsta ? {",
+        "\t\t\t\t\t\tpersistenceId_string: it.proizvod.vrsta.persistenceId_string !== undefined ? it.proizvod.vrsta.persistenceId_string : null,",
+        "\t\t\t\t\t\tnaziv: it.proizvod.vrsta.naziv !== undefined ? it.proizvod.vrsta.naziv : null",
+        "\t\t\t\t\t} : null,",
+        "\t\t\t\t\ttipProizvoda: it.proizvod.tipProizvoda !== undefined ? it.proizvod.tipProizvoda : null",
+        "\t\t\t\t} : null",
+        "\t\t\t})),",
+        "\t\t\tponudjac: it.ponudjac !== undefined ? it.ponudjac : null,",
+        "\t\t\tponudjacNaziv: it.ponudjacNaziv !== undefined ? it.ponudjacNaziv : null,",
+        "\t\t\tnajboljaPonuda: it.najboljaPonuda !== undefined ? it.najboljaPonuda : null",
+        "\t\t}))",
         "\t}",
         "}"
       ],
@@ -988,10 +1073,10 @@
       ],
       "exposed" : false
     },
-    "trebovanje" : {
+    "ponude" : {
       "type" : "url",
       "value" : [
-        "../{{context.trebovanje_ref.link}}"
+        "../{{context.ponude_ref.link}}"
       ],
       "exposed" : false
     },
@@ -1002,24 +1087,16 @@
       ],
       "exposed" : false
     },
-    "zap" : {
+    "trebovanjeProizvod_query" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user/{{trebovanje.zaposleni}}?d=professional_data"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
-    "zaposleni" : {
-      "type" : "expression",
-      "value" : [
-        "return $data.zap.firstname + \" \" + $data.zap.lastname"
+        "../API/bdm/businessData/com.company.model.TrebovanjeProizvod?q=find&p=0&c=99"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "cef821a4-22ac-42b6-a2ba-ff088cd8d418",
+  "uuid" : "382f7470-3b03-4868-9515-f964743c21af",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
