@@ -1234,7 +1234,7 @@
       <formMapping xmi:type="process:FormMapping" xmi:id="_PcKzpFbMEeyHeq_wXieRRw">
         <targetForm xmi:type="expression:Expression" xmi:id="_Lb8xAI3jEeyU6u0EwyFUEw" name="trebovanjeForma" content="dc95cfc0-ea8b-4907-8768-0f52b74608d2" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_PcKzplbMEeyHeq_wXieRRw">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_PcKzplbMEeyHeq_wXieRRw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_PcKzp1bMEeyHeq_wXieRRw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_125NEFbMEeyHeq_wXieRRw" target="_JuImgI3yEeyfcf6FmtXyCw" source="_nXrKcFbMEeyHeq_wXieRRw">
