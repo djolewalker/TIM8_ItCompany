@@ -30,6 +30,64 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="hrsluzbenik1">
+      <firstName>hr</firstName>
+      <lastName>sluzbenik</lastName>
+      <manager>hrmenadzer</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hrmenadzer">
+      <firstName>hr</firstName>
+      <lastName>menadzer</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hrsluzbenik2">
+      <firstName>h1</firstName>
+      <lastName>sluzbenik2</lastName>
+      <manager>hrmenadzer</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="clanProjektnogTimaJunior">
+      <manager>menadzerProjektnogTima</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="clanProjektnogTimaSenior">
+      <manager>menadzerProjektnogTima</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="poznavalacStranogJezikaEngleski">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="poznavalacStranogJezikaFrancuski">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="menadzerProjektnogTima">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -64,6 +122,12 @@
     <group name="Gosti">
       <displayName>Neregistrovani korisnici</displayName>
     </group>
+    <group name="projektniTim" parentPath="/Zaposleni">
+      <displayName>Projektni tim</displayName>
+    </group>
+    <group name="poznavalacStranogJezika" parentPath="/Zaposleni">
+      <displayName>Poznavalac stranog jezika</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -90,6 +154,54 @@
       <userName>zaposleni</userName>
       <roleName>member</roleName>
       <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>hrsluzbenik1</userName>
+      <roleName>member</roleName>
+      <groupName>hrSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hrmenadzer</userName>
+      <roleName>member</roleName>
+      <groupName>hrSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hrsluzbenik2</userName>
+      <roleName>member</roleName>
+      <groupName>hrSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>clanProjektnogTimaJunior</userName>
+      <roleName>member</roleName>
+      <groupName>projektniTim</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>clanProjektnogTimaSenior</userName>
+      <roleName>member</roleName>
+      <groupName>projektniTim</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>poznavalacStranogJezikaEngleski</userName>
+      <roleName>member</roleName>
+      <groupName>poznavalacStranogJezika</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>poznavalacStranogJezikaFrancuski</userName>
+      <roleName>member</roleName>
+      <groupName>poznavalacStranogJezika</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>menadzerProjektnogTima</userName>
+      <roleName>member</roleName>
+      <groupName>projektniTim</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

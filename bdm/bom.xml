@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.KomisijaPonuda">
+            <fields>
+                <field type="STRING" length="255" name="hr" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="clanProjektnogTima" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="poznavalacJezika" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.KreiranjeTermina">
+            <fields>
+                <field type="OFFSETDATETIME" length="255" name="prviTermin" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="drugiTermin" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="treciTermin" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odobren" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.OdabirKomisije">
+            <fields>
+                <field type="LONG" length="255" name="clanHRSluzbe" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="clanProjektnogTima" nullable="true" collection="true"/>
+                <field type="LONG" length="255" name="poznavalacStranogJezika" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Konferencija">
             <fields>
                 <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
