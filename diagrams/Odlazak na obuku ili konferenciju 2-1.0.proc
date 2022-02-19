@@ -12,43 +12,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_36fYqI2XEeyqD4XgwWjfTA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_36fYqY2XEeyqD4XgwWjfTA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_36fYqo2XEeyqD4XgwWjfTA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_Zp1oKI2YEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Zp2PMI2YEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Zp2PMo2YEeyqD4XgwWjfTA" name="zahtevKonferencijaObukaInput.ime" content="     ?.ime" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
-            <operator xmi:type="expression:Operator" xmi:id="_Zp2PNI2YEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setIme">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_Zp2PNY2YEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Zp2PNo2YEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Zp2POI2YEeyqD4XgwWjfTA" name="zahtevKonferencijaObukaInput.prezime" content="     ?.prezime" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
-            <operator xmi:type="expression:Operator" xmi:id="_Zp2POo2YEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setPrezime">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_Zp2PO42YEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Zp2PPI2YEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Zp2PPo2YEeyqD4XgwWjfTA" name="zahtevKonferencijaObukaInput.cena" content="     ?.cena" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double"/>
-            <operator xmi:type="expression:Operator" xmi:id="_Zp2PQI2YEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setCena">
-              <inputTypes>java.lang.Double</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_Zp2PQY2YEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Zp2PQo2YEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Zp2PRI2YEeyqD4XgwWjfTA" name="zahtevKonferencijaObukaInput.datum" content="     ?.datum" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate"/>
-            <operator xmi:type="expression:Operator" xmi:id="_Zp2PRo2YEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setDatum">
-              <inputTypes>java.time.LocalDate</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_Zp2PR42YEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_Zp2PSI2YEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_Zp2PSo2YEeyqD4XgwWjfTA" name="zahtevKonferencijaObukaInput.konferencija" content="//Retrieve aggregated Konferencija using its DAO and persistenceId&#xD;&#xA;def konferencijaVar = konferencijaDAO.findByPersistenceId(     ?.konferencija?.persistenceId_string?.trim() ?      .konferencija.persistenceId_string.toLong() : null)&#xD;&#xA;if (!konferencijaVar) {&#xD;&#xA;&#x9;if (     ?.konferencija?.persistenceId_string?.trim() ?      .konferencija.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Konferencija` with the persistence id &quot; +      ?.konferencija?.persistenceId_string?.trim() ?      .konferencija.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;return konferencijaVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Konferencija">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_Zp2PTI2YEeyqD4XgwWjfTA" name="konferencijaDAO" content="konferencijaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.KonferencijaDAO" returnTypeFixed="true"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_Zp2PTY2YEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setKonferencija">
-              <inputTypes>com.company.model.Konferencija</inputTypes>
-            </operator>
-          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_2YjZ6Y2ZEeyqD4XgwWjfTA">
             <leftOperand xmi:type="expression:Expression" xmi:id="_2YjZ6o2ZEeyqD4XgwWjfTA" name="zahtevKonferencijaObuka" content="zahtevKonferencijaObuka" type="TYPE_VARIABLE" returnType="com.company.model.ZahtevZaOdlazakNaKonferenciju">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2YjZ642ZEeyqD4XgwWjfTA" name="zahtevKonferencijaObuka" dataType="_36fY1I2XEeyqD4XgwWjfTA" className="com.company.model.ZahtevZaOdlazakNaKonferenciju"/>
@@ -322,11 +285,6 @@
             <operator xmi:type="expression:Operator" xmi:id="_icovHY2iEeyqD4XgwWjfTA" type="JAVA_METHOD" expression="setOdobren">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_nz2EMI2iEeyqD4XgwWjfTA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_nz2EMY2iEeyqD4XgwWjfTA" name="" content=""/>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_nz2EMo2iEeyqD4XgwWjfTA" name="" content=""/>
-            <operator xmi:type="expression:Operator" xmi:id="_nz2EM42iEeyqD4XgwWjfTA" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_iGJbM42aEeyqD4XgwWjfTA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_iGJbNI2aEeyqD4XgwWjfTA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
