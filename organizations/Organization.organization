@@ -224,6 +224,7 @@
       <roleName>member</roleName>
       <groupName>projektniTim</groupName>
       <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
     <membership>
       <userName>dobavljac1</userName>
       <roleName>member</roleName>
