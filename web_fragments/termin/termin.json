@@ -1,0 +1,237 @@
+{
+  "modelVersion" : "2.2",
+  "id" : "termin",
+  "name" : "termin",
+  "lastUpdate" : 1645304300917,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 4"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Grupa termina 1"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "5fdd202d-fed3-4b09-8ca6-04acf56c8da6",
+        "hasValidationError" : false,
+        "id" : "pbTitle",
+        "description" : ""
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : "intervju.termini"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "9dd2d89b-a22d-4bd4-86d9-a5b3ac3790b4",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "showNow" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "inlineInput" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "dateFormat" : {
+                  "type" : "constant",
+                  "value" : "MM/dd/yyyy"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 1
+                },
+                "readOnly" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Vreme"
+                },
+                "type" : {
+                  "type" : "constant"
+                },
+                "required" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "todayLabel" : {
+                  "type" : "constant",
+                  "value" : "Today"
+                },
+                "timePlaceholder" : {
+                  "type" : "constant",
+                  "value" : "Enter a time (h:mm:ss a)"
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "showToday" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "timeFormat" : {
+                  "type" : "constant",
+                  "value" : "h:mm:ss a"
+                },
+                "placeholder" : {
+                  "type" : "constant",
+                  "value" : "Enter a date (mm/dd/yyyy)"
+                },
+                "nowLabel" : {
+                  "type" : "constant",
+                  "value" : "Now"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "value" : {
+                  "type" : "variable",
+                  "value" : "$item.vreme"
+                },
+                "withTimeZone" : {
+                  "type" : "constant",
+                  "value" : true
+                }
+              },
+              "reference" : "5f611183-17b8-47a4-b8ba-20468c0e86b5",
+              "hasValidationError" : false,
+              "id" : "pbDateTimePicker",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "disabled" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Odabran"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "value" : {
+                  "type" : "variable",
+                  "value" : "$item.odabran"
+                },
+                "required" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "ceffc938-5217-44a0-9c25-294cea1ba8ac",
+              "hasValidationError" : false,
+              "id" : "pbCheckbox",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}
