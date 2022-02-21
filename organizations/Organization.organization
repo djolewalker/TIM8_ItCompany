@@ -14,19 +14,13 @@
     </user>
     <user userName="kandidat">
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>kandidat@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="gost">
-      <personalData/>
-      <professionalData/>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="zaposleni">
-      <firstName>Zaposleni</firstName>
-      <lastName>Zaposleni</lastName>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -67,24 +61,32 @@
     <user userName="clanProjektnogTimaJunior">
       <manager>menadzerProjektnogTima</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>ptim1@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="clanProjektnogTimaSenior">
       <manager>menadzerProjektnogTima</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>ptim2@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="poznavalacStranogJezikaEngleski">
+      <manager>poznavalacStranogJezikaMenadzer</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email></email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="poznavalacStranogJezikaFrancuski">
+      <manager>poznavalacStranogJezikaMenadzer</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -92,7 +94,9 @@
     </user>
     <user userName="menadzerProjektnogTima">
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>menadzer.ptim@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -116,10 +120,21 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="poznavalacStranogJezikaMenadzer">
+      <firstName>Menadzer</firstName>
+      <lastName>Jezik</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
       <displayName>Member</displayName>
+    </role>
+    <role name="manager">
+      <displayName>Manager</displayName>
     </role>
   </roles>
   <groups>
@@ -165,7 +180,7 @@
     </membership>
     <membership>
       <userName>superuser</userName>
-      <roleName>member</roleName>
+      <roleName>manager</roleName>
       <groupName>Zaposleni</groupName>
     </membership>
     <membership>
@@ -177,11 +192,6 @@
       <userName>gost</userName>
       <roleName>member</roleName>
       <groupName>Gosti</groupName>
-    </membership>
-    <membership>
-      <userName>zaposleni</userName>
-      <roleName>member</roleName>
-      <groupName>Zaposleni</groupName>
     </membership>
     <membership>
       <userName>hrsluzbenik1</userName>
@@ -240,6 +250,30 @@
       <userName>dobavljac2</userName>
       <roleName>member</roleName>
       <groupName>dobavljaci</groupName>
+    </membership>
+    <membership>
+      <userName>poznavalacStranogJezikaMenadzer</userName>
+      <roleName>member</roleName>
+      <groupName>poznavalacStranogJezika</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>poznavalacStranogJezikaMenadzer</userName>
+      <roleName>manager</roleName>
+      <groupName>poznavalacStranogJezika</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hrmenadzer</userName>
+      <roleName>manager</roleName>
+      <groupName>hrSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>menadzerProjektnogTima</userName>
+      <roleName>manager</roleName>
+      <groupName>projektniTim</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

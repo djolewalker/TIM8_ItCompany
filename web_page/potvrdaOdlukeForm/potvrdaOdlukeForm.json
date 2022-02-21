@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdaOdlukeForm",
   "name" : "potvrdaOdlukeForm",
-  "lastUpdate" : 1645475440683,
+  "lastUpdate" : 1645480863941,
   "rows" : [
     [
       {
@@ -1006,82 +1006,6 @@
                             "id" : "pbInput",
                             "description" : ""
                           }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "dateFormat" : {
-                                "type" : "constant",
-                                "value" : "MM/dd/yyyy"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Datum Isteka"
-                              },
-                              "type" : {
-                                "type" : "constant"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "todayLabel" : {
-                                "type" : "constant",
-                                "value" : "Today"
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "showToday" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "placeholder" : {
-                                "type" : "constant",
-                                "value" : "Enter a date (mm/dd/yyyy)"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "prijava_oglas.datumIsteka"
-                              }
-                            },
-                            "reference" : "26536d25-64f2-412a-ad05-3c5dcd18ada8",
-                            "hasValidationError" : false,
-                            "id" : "pbDatePicker",
-                            "description" : ""
-                          }
                         ]
                       ]
                     }
@@ -1114,7 +1038,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Preliminarni Status H R"
+                          "value" : "Prijava prihvacena"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1163,7 +1087,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Konacan Status Menadzera HR"
+                          "value" : "Menadzer odobrio prijavu"
                         },
                         "dimension" : {
                           "type" : "constant",
