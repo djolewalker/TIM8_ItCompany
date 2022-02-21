@@ -218,7 +218,6 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_hf_HQZHFEey5b9sNJfdZ6g"/>
         <condition xmi:type="expression:Expression" xmi:id="_hf_HQpHFEey5b9sNJfdZ6g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_9R_zgI6BEeyTa4mFWzH32w" name="Any"/>
       <contract xmi:type="process:Contract" xmi:id="_x79hto58Eeyr-rizXkWi0w"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_x79ht458Eeyr-rizXkWi0w">
         <name xmi:type="expression:Expression" xmi:id="_x79huI58Eeyr-rizXkWi0w" content="" returnTypeFixed="true"/>

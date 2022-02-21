@@ -16,6 +16,8 @@
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.IntervjuKomisija" fetchType="LAZY" name="komisija" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.Termin" fetchType="EAGER" name="termini" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="odustao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="primljen" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -27,6 +29,17 @@
                 <field type="LONG" length="255" name="clanProjektnogTima" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="poznavalacStranogJezika" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.PrijavaZaOglas" fetchType="EAGER" name="prijava" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.IntervjuZapisnik">
+            <fields>
+                <field type="STRING" length="255" name="ocena" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="licanProcena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="utisak" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preporucujem" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -129,6 +142,7 @@
                 <field type="OFFSETDATETIME" length="255" name="vreme" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="odabran" nullable="true" collection="false"/>
                 <field type="LONG" length="255" name="kreirao" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.IntervjuZapisnik" fetchType="EAGER" name="zapisnik" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
