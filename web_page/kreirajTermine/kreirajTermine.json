@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "kreirajTermine",
   "name" : "kreirajTermine",
-  "lastUpdate" : 1645390970752,
+  "lastUpdate" : 1645480986774,
   "rows" : [
     [
       {
@@ -794,7 +794,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Poznavalac Stranog Jezika"
+                                "value" : "Poznavalac stranog jezika"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -1391,11 +1391,11 @@
                                     },
                                     "todayLabel" : {
                                       "type" : "constant",
-                                      "value" : "Today"
+                                      "value" : "Danas"
                                     },
                                     "timePlaceholder" : {
                                       "type" : "constant",
-                                      "value" : "Enter a time (h:mm:ss a)"
+                                      "value" : "Vreme"
                                     },
                                     "labelHidden" : {
                                       "type" : "constant",
@@ -1415,11 +1415,11 @@
                                     },
                                     "placeholder" : {
                                       "type" : "constant",
-                                      "value" : "Enter a date (mm/dd/yyyy)"
+                                      "value" : "Datum"
                                     },
                                     "nowLabel" : {
                                       "type" : "constant",
-                                      "value" : "Now"
+                                      "value" : "Sada"
                                     },
                                     "dimension" : {
                                       "type" : "constant",
@@ -1671,7 +1671,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Kreiraj termine"
+                    "value" : "Sacuvaj termine"
                   },
                   "dataToSend" : {
                     "type" : "expression",

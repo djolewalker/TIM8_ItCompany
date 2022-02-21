@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "konacnaOdluka",
   "name" : "konacnaOdluka",
-  "lastUpdate" : 1645401653970,
+  "lastUpdate" : 1645481111341,
   "rows" : [
     [
       {
@@ -1032,7 +1032,7 @@
                                   "propertyValues" : {
                                     "showNow" : {
                                       "type" : "constant",
-                                      "value" : true
+                                      "value" : false
                                     },
                                     "hidden" : {
                                       "type" : "constant",
@@ -1083,7 +1083,7 @@
                                     },
                                     "showToday" : {
                                       "type" : "constant",
-                                      "value" : true
+                                      "value" : false
                                     },
                                     "labelPosition" : {
                                       "type" : "constant",
@@ -1526,7 +1526,7 @@
                                           },
                                           "text" : {
                                             "type" : "interpolation",
-                                            "value" : "{{$item.zapisnik.preporucujem ? 'Preporucujem' : 'Ne preporucujem' }}"
+                                            "value" : "Preporuka: {{$item.zapisnik.preporucujem ? 'Preporucujem' : 'Ne preporucujem' }}"
                                           },
                                           "level" : {
                                             "type" : "constant",

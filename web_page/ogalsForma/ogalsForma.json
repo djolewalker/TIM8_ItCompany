@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ogalsForma",
   "name" : "ogalsForma",
-  "lastUpdate" : 1645397821606,
+  "lastUpdate" : 1645480728913,
   "rows" : [
     [
       {
@@ -160,7 +160,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Oglas {{asd}}"
+                    "value" : "Oglas"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -262,7 +262,25 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "ee069cfa-9541-4a04-8989-9a5f8d198826",
@@ -326,7 +344,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -377,7 +395,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -647,22 +665,6 @@
       "value" : [
         "id"
       ],
-      "exposed" : false
-    },
-    "asd" : {
-      "type" : "expression",
-      "value" : [
-        "console.log($data.zaposleni)",
-        "return \"hello\";"
-      ],
-      "exposed" : false
-    },
-    "zaposleni" : {
-      "type" : "url",
-      "value" : [
-        "../API/identity/user?p=0&c=100"
-      ],
-      "advancedOptions" : { },
       "exposed" : false
     }
   },

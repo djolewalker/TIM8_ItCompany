@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_PcKzkFbMEeyHeq_wXieRRw" name="Nabavka opreme" author="Dimitrije" bonitaVersion="7.13.0" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_PcKzkVbMEeyHeq_wXieRRw" name="Ucesnici">
+    <elements xmi:type="process:Pool" xmi:id="_PcKzkVbMEeyHeq_wXieRRw" name="Nabavka opreme">
       <elements xmi:type="process:Lane" xmi:id="_Z8AG0I3zEeyfcf6FmtXyCw" name="Zaposleni" actor="_nwo9AI2TEeyqD4XgwWjfTA">
         <elements xmi:type="process:StartEvent" xmi:id="_adrZMFbMEeyHeq_wXieRRw" documentation="Max 5 stavki,&#xD;&#xA;Ime dobijamo direktno od kreatora" name="kreiranje zahteva za nabavku" outgoing="_I034UJAYEeymm9K58SR2mw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_adrZMlbMEeyHeq_wXieRRw" name="" content="" returnTypeFixed="true"/>

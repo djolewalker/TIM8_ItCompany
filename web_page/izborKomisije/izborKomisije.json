@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "izborKomisije",
   "name" : "izborKomisije",
-  "lastUpdate" : 1645303728747,
+  "lastUpdate" : 1645480918830,
   "rows" : [
     [
       {
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -278,7 +279,7 @@
                         },
                         "placeholder" : {
                           "type" : "interpolation",
-                          "value" : "Select an option"
+                          "value" : "Odaberi organizacionu jedinicu"
                         },
                         "availableValues" : {
                           "type" : "expression",
@@ -345,7 +346,8 @@
                           "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "interpolation"
+                          "type" : "interpolation",
+                          "value" : "Odaberi zaposlenog"
                         },
                         "availableValues" : {
                           "type" : "expression",
@@ -479,7 +481,7 @@
                         },
                         "placeholder" : {
                           "type" : "interpolation",
-                          "value" : "Select an option"
+                          "value" : "Odaberi organizacionu jedinicu"
                         },
                         "availableValues" : {
                           "type" : "expression",
@@ -546,7 +548,8 @@
                           "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "interpolation"
+                          "type" : "interpolation",
+                          "value" : "Odaberi zaposlenog"
                         },
                         "availableValues" : {
                           "type" : "expression",
@@ -680,7 +683,7 @@
                         },
                         "placeholder" : {
                           "type" : "interpolation",
-                          "value" : "Select an option"
+                          "value" : "Odaberi organizacionu jedinicu"
                         },
                         "availableValues" : {
                           "type" : "expression",
@@ -747,7 +750,8 @@
                           "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "interpolation"
+                          "type" : "interpolation",
+                          "value" : "Odaberi zaposlenog"
                         },
                         "availableValues" : {
                           "type" : "expression",

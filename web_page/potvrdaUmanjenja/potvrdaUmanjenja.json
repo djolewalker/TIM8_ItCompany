@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdaUmanjenja",
   "name" : "potvrdaUmanjenja",
-  "lastUpdate" : 1645021902079,
+  "lastUpdate" : 1645481502756,
   "rows" : [
     [
       {
@@ -526,8 +526,8 @@
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "constant",
-                                "value" : false
+                                "type" : "expression",
+                                "value" : "$item.nemaNaStanju"
                               },
                               "labelPosition" : {
                                 "type" : "constant",
@@ -609,7 +609,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "$item.kolicina < $item.kolicinaNaSkladistu"
+                                "value" : "$item.kolicina < $item.kolicinaNaSkladistu || $item.nemaNaStanju"
                               },
                               "labelHidden" : {
                                 "type" : "constant",
@@ -643,6 +643,42 @@
                             "reference" : "b95d839a-60d6-481f-a2b3-1dcf403d3dab",
                             "hasValidationError" : false,
                             "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!$item.nemaNaStanju"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "Nema dostupnih proizvoda ovog tipa u skladistu"
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "091d019c-fcb1-4d70-9924-b23fa258ed59",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle"
                           }
                         ]
                       ]
