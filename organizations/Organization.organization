@@ -37,7 +37,9 @@
       <lastName>sluzbenik</lastName>
       <manager>hrmenadzer</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>hr2@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -45,7 +47,9 @@
       <firstName>hr</firstName>
       <lastName>menadzer</lastName>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>hrMenadzer@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
@@ -54,7 +58,9 @@
       <lastName>sluzbenik2</lastName>
       <manager>hrmenadzer</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>hr1@tim8.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
