@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "izborTermina",
   "name" : "izborTermina",
-  "lastUpdate" : 1645308644019,
+  "lastUpdate" : 1645391299412,
   "rows" : [
     [
       {
@@ -430,8 +430,8 @@
                                       "value" : ""
                                     },
                                     "disabled" : {
-                                      "type" : "constant",
-                                      "value" : false
+                                      "type" : "expression",
+                                      "value" : "!$item.odabran && gr1count === 1"
                                     },
                                     "label" : {
                                       "type" : "interpolation",
@@ -690,8 +690,8 @@
                                             "value" : false
                                           },
                                           "disabled" : {
-                                            "type" : "constant",
-                                            "value" : false
+                                            "type" : "expression",
+                                            "value" : "!$item.odabran && gr2count === 1"
                                           },
                                           "required" : {
                                             "type" : "constant",
@@ -948,8 +948,8 @@
                                             "value" : false
                                           },
                                           "disabled" : {
-                                            "type" : "constant",
-                                            "value" : false
+                                            "type" : "expression",
+                                            "value" : "!$item.odabran && gr3count === 1"
                                           },
                                           "required" : {
                                             "type" : "constant",
@@ -985,6 +985,82 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Odustani od intervjua"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "eb066c35-ed2b-48f5-bbd0-3f289211a597",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Odustao"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "intervju.odustao"
+                  }
+                },
+                "reference" : "630c3245-6b63-403e-acd2-5823ee505644",
+                "hasValidationError" : false,
+                "id" : "pbCheckbox"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -995,8 +1071,8 @@
                     "type" : "variable"
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "intervju.odustao"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -1041,7 +1117,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || odabraniCount !== 3"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1079,6 +1155,98 @@
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!intervju.odustao"
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Odustani"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "b4f9e304-2b56-4178-9809-e13f9f37f4c9",
+                "hasValidationError" : false,
+                "id" : "pbButton"
               }
             ],
             [
@@ -1125,6 +1293,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "cc15c260-616e-4ba6-bf31-80816f4d0704",
@@ -1192,7 +1368,8 @@
         "\t\t\t\tvreme: it.vreme !== undefined ? it.vreme : null,",
         "\t\t\t\todabran: it.odabran !== undefined ? it.odabran : null,",
         "\t\t\t\tkreirao: it.kreirao !== undefined ? it.kreirao : null",
-        "\t\t\t}))",
+        "\t\t\t})),",
+        "\t\t\todustao: $data.intervju.odustao || false",
         "\t\t}",
         "\t}",
         "}"
@@ -1238,7 +1415,31 @@
     "odabraniCount" : {
       "type" : "expression",
       "value" : [
-        "return $data.intervju.termini.filter(x => x.odabran).lenght;"
+        "return $data.intervju.termini.filter(x => x.odabran).length;"
+      ],
+      "exposed" : false
+    },
+    "gr1count" : {
+      "type" : "expression",
+      "value" : [
+        "var termini = $data.intervju.termini;",
+        "return termini.filter(x => x.kreirao ===$data.intervjueri[0] && x.odabran).length"
+      ],
+      "exposed" : false
+    },
+    "gr2count" : {
+      "type" : "expression",
+      "value" : [
+        "var termini = $data.intervju.termini;",
+        "return termini.filter(x => x.kreirao ===$data.intervjueri[1] && x.odabran).length"
+      ],
+      "exposed" : false
+    },
+    "gr3count" : {
+      "type" : "expression",
+      "value" : [
+        "var termini = $data.intervju.termini;",
+        "return termini.filter(x => x.kreirao === $data.intervjueri[2] && x.odabran).length"
       ],
       "exposed" : false
     }

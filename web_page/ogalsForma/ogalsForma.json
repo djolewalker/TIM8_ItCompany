@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ogalsForma",
   "name" : "ogalsForma",
-  "lastUpdate" : 1639512161642,
+  "lastUpdate" : 1645397821606,
   "rows" : [
     [
       {
@@ -160,7 +160,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Oglas"
+                    "value" : "Oglas {{asd}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -647,6 +647,22 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "asd" : {
+      "type" : "expression",
+      "value" : [
+        "console.log($data.zaposleni)",
+        "return \"hello\";"
+      ],
+      "exposed" : false
+    },
+    "zaposleni" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=100"
+      ],
+      "advancedOptions" : { },
       "exposed" : false
     }
   },
