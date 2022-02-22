@@ -125,7 +125,7 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_FlT8F2dHEeyG95MdZZB8pw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <BoundaryIntermediateEvents xmi:type="process:IntermediateErrorCatchEvent" xmi:id="_K6ClEGdHEeyG95MdZZB8pw" name="Error1" outgoing="_BF5VAGdIEeyG95MdZZB8pw"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_akf2UGdIEeyG95MdZZB8pw" name="Step2" outgoing="_eCUoEGdIEeyG95MdZZB8pw" incoming="_BF5VAGdIEeyG95MdZZB8pw" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_akf2UGdIEeyG95MdZZB8pw" name="Neuspesan email" outgoing="_eCUoEGdIEeyG95MdZZB8pw" incoming="_BF5VAGdIEeyG95MdZZB8pw" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BFz1cmdIEeyG95MdZZB8pw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BFz1cWdIEeyG95MdZZB8pw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BFz1c2dIEeyG95MdZZB8pw" name="" content="" returnTypeFixed="true"/>
@@ -138,7 +138,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_JZrPcGdQEeyG95MdZZB8pw" name="00:02:00" content="120000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_akf2WmdIEeyG95MdZZB8pw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KGB2wGdeEeyj5oJTI9SSMg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_V5FrsJQtEeypVptpoHlreg" name="neuspesanEmailRegistracijiForm" content="39fea8c7-8ca7-45c5-aac6-ca4b4d929d20" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_akf2WWdIEeyG95MdZZB8pw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_akf2XGdIEeyG95MdZZB8pw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

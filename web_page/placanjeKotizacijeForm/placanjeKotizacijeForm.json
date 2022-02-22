@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "zahtevKonferencijaObukaOdobravanjeForm",
-  "name" : "zahtevKonferencijaObukaOdobravanjeForm",
-  "lastUpdate" : 1645524753921,
+  "id" : "placanjeKotizacijeForm",
+  "name" : "placanjeKotizacijeForm",
+  "lastUpdate" : 1645554241237,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "01231b1e-848b-45d3-9a27-7dce838fb08e",
+        "reference" : "90b5d172-6cd7-4d44-b0d6-1791c0d3c978",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "e42d03f1-5cdc-43b5-aef5-5768a7ca3c3f",
+              "reference" : "34d959a5-3377-4c0e-8de3-13391ac33bae",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "ac833812-ce96-4260-aa83-0fdfb69f83ba",
+              "reference" : "425e1259-97ca-4e79-bd26-853d758596d9",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2cd5b809-9eb2-4dcb-a242-1eca07cb7d30",
+        "reference" : "63535052-27dd-4fa1-8ebf-e4acfc02bb7f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "bbf38f0e-ce14-4a74-9de6-43075bb181be",
+          "reference" : "002170f1-1de1-4c8a-b005-25d3a3101423",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9a21ed6d-5584-489e-a35c-730bba354ef4",
+                "reference" : "4f8dfc36-33e3-4bf1-80ec-4f4520879513",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -195,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "19b0cd68-42a5-44d8-a7ed-75087af85e23",
+                "reference" : "49ff626c-c007-49cc-b008-ab4726156df2",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -275,7 +274,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "1513fa08-1058-40f1-8449-7de459308c85",
+                      "reference" : "0ef116b8-c8fd-46e0-a70f-f58e9ad8c5e7",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -357,167 +356,9 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "bf6215b4-d79b-4e69-b296-7e771662d84f",
+                      "reference" : "f8b25f20-4795-49b4-97f0-39a7527e5556",
                       "hasValidationError" : false,
                       "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Cena"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.cena"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "50f3bec9-4eec-4368-9db9-baff7e8778f7",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Datum"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.datum"
-                        }
-                      },
-                      "reference" : "81641c00-25a5-46cf-b66b-1a871a6520ce",
-                      "hasValidationError" : false,
-                      "id" : "pbDatePicker",
                       "description" : ""
                     }
                   ],
@@ -556,7 +397,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "d042fe43-507f-4752-8b17-a2e51c9c0d6f",
+                      "reference" : "52b8c8f7-615a-42c8-951a-48a7520e926e",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -588,7 +429,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "5aa7c6c6-d681-49b9-a5c1-efeadc817366",
+                      "reference" : "d2e2d557-df8c-4dd0-b404-bbe9290d59bb",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -602,54 +443,75 @@
                               "lg" : 12
                             },
                             "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
                               "labelHidden" : {
                                 "type" : "constant",
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "expression",
-                                "value" : "!zahtevKonferencijaObuka.konferencija.naziv"
-                              },
-                              "cssClasses" : {
                                 "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Naziv"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{zahtevKonferencijaObuka.konferencija.naziv}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
+                                "value" : false
                               },
                               "labelPosition" : {
                                 "type" : "constant",
                                 "value" : "top"
                               },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
                               "labelWidth" : {
                                 "type" : "constant",
-                                "value" : 4
+                                "value" : 1
                               },
-                              "allowHTML" : {
+                              "readOnly" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Naziv"
+                              },
+                              "placeholder" : {
+                                "type" : "constant"
+                              },
+                              "type" : {
+                                "type" : "constant",
+                                "value" : "text"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "zahtevKonferencijaObuka.konferencija.naziv"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
-                            "reference" : "0123bd54-aab7-49c6-8bc6-92bef1873e0a",
+                            "reference" : "29d3975e-3553-4813-94a6-b2eeb336a246",
                             "hasValidationError" : false,
-                            "id" : "pbText",
+                            "id" : "pbInput",
                             "description" : ""
                           }
                         ],
@@ -668,8 +530,8 @@
                                 "value" : false
                               },
                               "hidden" : {
-                                "type" : "expression",
-                                "value" : "!zahtevKonferencijaObuka.konferencija.uzivo"
+                                "type" : "constant",
+                                "value" : false
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -690,11 +552,197 @@
                               "value" : {
                                 "type" : "variable",
                                 "value" : "zahtevKonferencijaObuka.konferencija.uzivo"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
                               }
                             },
-                            "reference" : "4df2b486-eb4d-4f62-9b8f-64ac7634aa6c",
+                            "reference" : "dda69654-2ee4-4cbd-bfce-70b6c6420854",
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "readOnly" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Cena"
+                              },
+                              "placeholder" : {
+                                "type" : "constant"
+                              },
+                              "type" : {
+                                "type" : "constant",
+                                "value" : "number"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "zahtevKonferencijaObuka.konferencija.cena"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "5548639f-d7be-4bdd-8332-6bd7d42e79dc",
+                            "hasValidationError" : false,
+                            "id" : "pbInput",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "showNow" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "inlineInput" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "dateFormat" : {
+                                "type" : "constant",
+                                "value" : "MM/dd/yyyy"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "readOnly" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Vreme"
+                              },
+                              "type" : {
+                                "type" : "constant"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "todayLabel" : {
+                                "type" : "constant",
+                                "value" : "Today"
+                              },
+                              "timePlaceholder" : {
+                                "type" : "constant",
+                                "value" : "Enter a time (h:mm:ss a)"
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "showToday" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "timeFormat" : {
+                                "type" : "constant",
+                                "value" : "h:mm:ss a"
+                              },
+                              "placeholder" : {
+                                "type" : "constant",
+                                "value" : "Enter a date (mm/dd/yyyy)"
+                              },
+                              "nowLabel" : {
+                                "type" : "constant",
+                                "value" : "Now"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "zahtevKonferencijaObuka.konferencija.vreme"
+                              },
+                              "withTimeZone" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "c8f67ad3-f857-4ff6-bc81-951d748ae4b9",
+                            "hasValidationError" : false,
+                            "id" : "pbDateTimePicker",
                             "description" : ""
                           }
                         ]
@@ -705,45 +753,36 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
+                        "text" : {
                           "type" : "interpolation",
-                          "value" : "Odobren"
+                          "value" : "Ukupna cena {{zahtevKonferencijaObuka.konferencija.cena}}"
                         },
-                        "dimension" : {
+                        "level" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "Level 2"
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.odobren"
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "right"
                         }
                       },
-                      "reference" : "0407b4e2-f9a2-4e02-a0db-aed0f8bd1a37",
+                      "reference" : "c5016ee9-c086-45d9-a3cb-0339483dbb62",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbTitle"
                     }
                   ]
                 ]
@@ -776,7 +815,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Odobri"
+                    "value" : "Plati kotizaciju"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -843,7 +882,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "0026b95e-8bc0-40e4-9a0d-dae5d6b3f8c7",
+                "reference" : "08079e1c-b976-4fde-a710-06c318568387",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -895,7 +934,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "20a55cd9-5f79-4618-86ec-8ed8611b2316",
+                "reference" : "945f2038-db89-4f80-8dcd-b14c023686c7",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -908,14 +947,14 @@
   ],
   "assets" : [
     {
-      "id" : "0a457c1b-8966-494f-8225-eb1831e1d475",
+      "id" : "3f0e8839-969a-4ba4-915b-b9b11eafb73b",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "548bfa52-d9d2-4840-b202-2e2d2f22aabb",
+      "id" : "52f08248-c5f6-440d-815d-ee23e40b1324",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -962,12 +1001,13 @@
         "\t\tzahtevKonferencijaObukaInput: {",
         "\t\t\time: $data.zahtevKonferencijaObuka.ime !== undefined ? $data.zahtevKonferencijaObuka.ime : null,",
         "\t\t\tprezime: $data.zahtevKonferencijaObuka.prezime !== undefined ? $data.zahtevKonferencijaObuka.prezime : null,",
-        "\t\t\tcena: $data.zahtevKonferencijaObuka.cena !== undefined ? $data.zahtevKonferencijaObuka.cena : null,",
-        "\t\t\tdatum: $data.zahtevKonferencijaObuka.datum !== undefined ? $data.zahtevKonferencijaObuka.datum : null,",
         "\t\t\tkonferencija: $data.zahtevKonferencijaObuka.konferencija ? {",
-        "\t\t\t\tpersistenceId_string: $data.zahtevKonferencijaObuka.konferencija.persistenceId_string !== undefined ? $data.zahtevKonferencijaObuka.konferencija.persistenceId_string : null",
-        "\t\t\t} : null,",
-        "\t\t\todobren: $data.zahtevKonferencijaObuka.odobren !== undefined ? $data.zahtevKonferencijaObuka.odobren : null",
+        "\t\t\t\tpersistenceId_string: $data.zahtevKonferencijaObuka.konferencija.persistenceId_string !== undefined ? $data.zahtevKonferencijaObuka.konferencija.persistenceId_string : null,",
+        "\t\t\t\tnaziv: $data.zahtevKonferencijaObuka.konferencija.naziv !== undefined ? $data.zahtevKonferencijaObuka.konferencija.naziv : null,",
+        "\t\t\t\tuzivo: $data.zahtevKonferencijaObuka.konferencija.uzivo !== undefined ? $data.zahtevKonferencijaObuka.konferencija.uzivo : null,",
+        "\t\t\t\tcena: $data.zahtevKonferencijaObuka.konferencija.cena !== undefined ? $data.zahtevKonferencijaObuka.konferencija.cena : null,",
+        "\t\t\t\tvreme: $data.zahtevKonferencijaObuka.konferencija.vreme !== undefined ? $data.zahtevKonferencijaObuka.konferencija.vreme : null",
+        "\t\t\t} : null",
         "\t\t}",
         "\t}",
         "}"
@@ -997,7 +1037,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "dc2e3e1d-2810-44fa-8755-c5b47f757dfd",
+  "uuid" : "920a2aea-1e08-459c-bad3-c231326542ad",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

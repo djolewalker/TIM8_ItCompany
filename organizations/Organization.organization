@@ -7,7 +7,7 @@
       <lastName>Petrovic</lastName>
       <personalData/>
       <professionalData>
-        <email>example@asd.com</email>
+        <email></email>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
