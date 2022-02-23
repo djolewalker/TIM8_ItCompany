@@ -308,7 +308,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_Ybg08JNYEeysYuSbb0Yctg" name="zaposleni" actor="_bEnoYJNcEeysYuSbb0Yctg">
-        <elements xmi:type="process:StartEvent" xmi:id="_9wMTU1bGEeyHeq_wXieRRw" name="pokretanje hr" outgoing="_iIYogF0WEeyQeePMVAZzVA">
+        <elements xmi:type="process:StartEvent" xmi:id="_9wMTU1bGEeyHeq_wXieRRw" name="pokretanje oglasa" outgoing="_iIYogF0WEeyQeePMVAZzVA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9wMTVFbGEeyHeq_wXieRRw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9wMTVVbGEeyHeq_wXieRRw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9wMTVlbGEeyHeq_wXieRRw" name="" content="" returnTypeFixed="true"/>

@@ -182,15 +182,18 @@
     <user userName="zaposleni">
       <firstName>Zaposleni</firstName>
       <lastName>Zaposleni</lastName>
+      <manager>sefzaposlenog</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>zaposleni@sistem.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
     <user userName="zaposleniSluzbaNabavke1">
       <firstName>Zaposleni</firstName>
       <lastName>Sluzba Nabavke</lastName>
-      <manager></manager>
+      <manager>sefSluzbaNabavke</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -199,6 +202,12 @@
     <user userName="sefSluzbaNabavke">
       <firstName>Sef</firstName>
       <lastName>Sluzba Nabavke</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="administrator">
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -402,6 +411,22 @@
       <roleName>manager</roleName>
       <groupName>nabavka</groupName>
       <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>administrator</userName>
+      <roleName>member</roleName>
+      <groupName>tehnickaSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sefzaposlenog</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>sefSluzbaNabavke</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
     </membership>
   </memberships>
 </organization:Organization>

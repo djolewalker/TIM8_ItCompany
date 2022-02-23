@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "unosBudzetaForm",
   "name" : "unosBudzetaForm",
-  "lastUpdate" : 1645524832385,
+  "lastUpdate" : 1645644762672,
   "rows" : [
     [
       {
@@ -405,7 +405,7 @@
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "number"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -413,7 +413,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.cena"
+                          "value" : "zahtevKonferencijaObuka.konferencija.cena"
                         },
                         "required" : {
                           "type" : "constant",
@@ -454,23 +454,27 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
+                        "hidden" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
                         "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
                           "type" : "constant",
                           "value" : true
                         },
@@ -478,46 +482,58 @@
                           "type" : "interpolation",
                           "value" : "Datum"
                         },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "placeholder" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : 1
                         },
-                        "dimension" : {
+                        "withTimeZone" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : true
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.datum"
+                          "value" : "zahtevKonferencijaObuka.konferencija.vreme"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        },
+                        "showNow" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "nowLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Now"
                         }
                       },
-                      "reference" : "4846d46a-72b6-4a0f-b648-753a92362ee4",
+                      "reference" : "238063c8-8806-471b-aa7c-b970847494df",
                       "hasValidationError" : false,
-                      "id" : "pbDatePicker",
-                      "description" : ""
+                      "id" : "pbDateTimePicker"
                     }
                   ],
                   [

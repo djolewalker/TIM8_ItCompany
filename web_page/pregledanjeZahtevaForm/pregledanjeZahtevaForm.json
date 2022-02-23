@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "pregledanjeZahtevaForm",
   "name" : "pregledanjeZahtevaForm",
-  "lastUpdate" : 1645524663021,
+  "lastUpdate" : 1645644879001,
   "rows" : [
     [
       {
@@ -414,7 +414,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.cena"
+                          "value" : "zahtevKonferencijaObuka.konferencija.cena"
                         },
                         "required" : {
                           "type" : "constant",
@@ -455,23 +455,27 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
+                        "hidden" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
                         "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "inlineInput" : {
                           "type" : "constant",
                           "value" : true
                         },
@@ -479,46 +483,58 @@
                           "type" : "interpolation",
                           "value" : "Datum"
                         },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "placeholder" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : 1
                         },
-                        "dimension" : {
+                        "withTimeZone" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : true
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "zahtevKonferencijaObuka.datum"
+                          "value" : "zahtevKonferencijaObuka.konferencija.vreme"
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "timeFormat" : {
+                          "type" : "constant",
+                          "value" : "h:mm:ss a"
+                        },
+                        "timePlaceholder" : {
+                          "type" : "interpolation",
+                          "value" : "Enter a time (h:mm:ss a)"
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Today"
+                        },
+                        "showNow" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "nowLabel" : {
+                          "type" : "interpolation",
+                          "value" : "Now"
                         }
                       },
-                      "reference" : "dd42a789-c786-46a0-b5f9-6b2ff4c5b130",
+                      "reference" : "92e03960-5021-4339-b4b6-b5bc9ef94cfb",
                       "hasValidationError" : false,
-                      "id" : "pbDatePicker",
-                      "description" : ""
+                      "id" : "pbDateTimePicker"
                     }
                   ],
                   [
