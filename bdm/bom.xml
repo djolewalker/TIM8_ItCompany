@@ -209,6 +209,7 @@
                 <field type="BOOLEAN" length="255" name="odobren" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.TipSmestaja" fetchType="LAZY" name="smestaj" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.TipPrevoza" fetchType="LAZY" name="prevoz" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="obrazlozenje" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

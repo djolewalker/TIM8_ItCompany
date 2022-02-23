@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "kreiranjeZahtevaForm",
   "name" : "kreiranjeZahtevaForm",
-  "lastUpdate" : 1645562630743,
+  "lastUpdate" : 1645618099686,
   "rows" : [
     [
       {
@@ -321,7 +321,7 @@
                               },
                               "required" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "disabled" : {
                                 "type" : "constant",

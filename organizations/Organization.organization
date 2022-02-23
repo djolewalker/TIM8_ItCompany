@@ -128,6 +128,82 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="sefzaposlenog">
+      <firstName>Sef</firstName>
+      <lastName>Zaposlenog</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="seffinansija">
+      <firstName>Sef</firstName>
+      <lastName>Finansija</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="opstaSluzbaZaposleni1">
+      <firstName>Opsta Sluzba</firstName>
+      <lastName>Zaposleni 1</lastName>
+      <manager>opstaSluzbaSef</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="opstaSluzbaZaposleni2">
+      <firstName>Opsta Sluzba</firstName>
+      <lastName>Zaposleni 2</lastName>
+      <manager>opstaSluzbaSef</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="opstaSluzbaSef">
+      <firstName>Opsta Sluzba</firstName>
+      <lastName>Sef</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="zaposleniFinansije">
+      <firstName>Zaposleni</firstName>
+      <lastName>Finansije</lastName>
+      <manager>seffinansija</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="zaposleni">
+      <firstName>Zaposleni</firstName>
+      <lastName>Zaposleni</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="zaposleniSluzbaNabavke1">
+      <firstName>Zaposleni</firstName>
+      <lastName>Sluzba Nabavke</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sefSluzbaNabavke">
+      <firstName>Sef</firstName>
+      <lastName>Sluzba Nabavke</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -273,6 +349,58 @@
       <userName>menadzerProjektnogTima</userName>
       <roleName>manager</roleName>
       <groupName>projektniTim</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sefzaposlenog</userName>
+      <roleName>manager</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>seffinansija</userName>
+      <roleName>manager</roleName>
+      <groupName>finansije</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstaSluzbaZaposleni1</userName>
+      <roleName>member</roleName>
+      <groupName>opstaSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstaSluzbaZaposleni2</userName>
+      <roleName>member</roleName>
+      <groupName>opstaSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opstaSluzbaSef</userName>
+      <roleName>manager</roleName>
+      <groupName>opstaSluzba</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>zaposleniFinansije</userName>
+      <roleName>member</roleName>
+      <groupName>finansije</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>zaposleni</userName>
+      <roleName>member</roleName>
+      <groupName>Zaposleni</groupName>
+    </membership>
+    <membership>
+      <userName>zaposleniSluzbaNabavke1</userName>
+      <roleName>member</roleName>
+      <groupName>nabavka</groupName>
+      <groupParentPath>/Zaposleni</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sefSluzbaNabavke</userName>
+      <roleName>manager</roleName>
+      <groupName>nabavka</groupName>
       <groupParentPath>/Zaposleni</groupParentPath>
     </membership>
   </memberships>
